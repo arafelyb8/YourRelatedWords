@@ -4,7 +4,7 @@ import android.content.Context;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 public class DatabaseOpenHelper extends SQLiteAssetHelper {
-    private static final String DATABASE_NAME="WordsDB.db";
+    private static final String DATABASE_NAME="WordsDB2.db";
     private static final int DATABASE_VERSION=1;
 
     //constructor

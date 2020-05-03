@@ -39,24 +39,44 @@ public class DatabaseAccess {
         }
     }
 
-    //query and return result from database. Query for english by passing spanish
+    //query english return spanish
     public String getSpanish(String word_english){
         c=db.rawQuery("Select spanish from Table1 where english = '"+word_english+"'", new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
-            String word_spanish = c.getString(0);
-            buffer.append(""+word_spanish);
+            String word = c.getString(0);
+            buffer.append(""+word);
+        }
+        return buffer.toString();
+    }
+    //query spanish return english
+    public String getEnglish(String word_spanish){
+        c=db.rawQuery("Select english from Table1 where spanish = '"+word_spanish+"'", new String[]{});
+        StringBuffer buffer = new StringBuffer();
+        while(c.moveToNext()){
+            String word = c.getString(0);
+            buffer.append(""+word);
         }
         return buffer.toString();
     }
 
-    //get a random spanish word
+    //get a random english word
     public String getRandomEnglish(){
         c=db.rawQuery("Select english from Table1 order by random() limit 1", new String[]{});
         StringBuffer buffer = new StringBuffer();
         while(c.moveToNext()){
-            String word_spanish = c.getString(0);
-            buffer.append(""+word_spanish);
+            String word = c.getString(0);
+            buffer.append(""+word);
+        }
+        return buffer.toString();
+    }
+    //get a random spanish word
+    public String getRandomSpanish(){
+        c=db.rawQuery("Select spanish from Table1 order by random() limit 1", new String[]{});
+        StringBuffer buffer = new StringBuffer();
+        while(c.moveToNext()){
+            String word = c.getString(0);
+            buffer.append(""+word);
         }
         return buffer.toString();
     }
