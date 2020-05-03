@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                     //getting string value from edit text
                     String random_english=databaseAccess.getRandomEnglish();
-                    word_english.setText(random_english);//write random_english in word english text view.
+                    word_english.setText(random_english); //write random_english in word english text view.
                     //String n=word.getText().toString();
                     //String spanish = databaseAccess.getSpanish(n); //getSpanish method used to get the spanish word from the english word
                     //setting text to result_spanish text view
