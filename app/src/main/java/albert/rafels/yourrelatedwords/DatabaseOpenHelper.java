@@ -9,6 +9,6 @@ public class DatabaseOpenHelper extends SQLiteAssetHelper {
 
     //constructor
     public DatabaseOpenHelper(Context context){
-         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+         super(context, DATABASE_NAME, null , DATABASE_VERSION);
     }
 }
