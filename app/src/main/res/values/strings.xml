@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Your Related Words</string>
+    <string name="app_slogan">Learn by yourself</string>
+    <string name="app_related">related with</string>
+    <string name="app_add">New</string>
+    <string name="app_info">Info</string>
+    <string name="app_random">Random</string>
+    <string name="app_check">Check</string>
+    <string name="app_write">write a word in english</string>
+    <string name="app_spanish">english word</string>
+    <string name="app_english">spanish word</string>
+
+</resources>
